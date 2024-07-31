@@ -78,8 +78,8 @@ At first, the code can be a bit overwhelming, but if we only consider the aspect
 The contract keeps track of two pieces of information - `tokens` and `metadata`. For the purpose of this tutorial we will only deal with the `tokens` field.
 
 ```rust
-#[near_bindgen]
-#[derive(BorshDeserialize, BorshSerialize, PanicOnDefault)]
+#[near(contract_state)]
+#[derive(PanicOnDefault)]
 pub struct Contract {
     tokens: NonFungibleToken,
     metadata: LazyOption<NFTContractMetadata>,
@@ -185,7 +185,7 @@ Verify that the correct account ID is printed in the terminal. If everything loo
 In the root of your NFT project run the following command to deploy your smart contract.
 
 ```bash
-near deploy --wasmFile res/non_fungible_token.wasm --accountId $ID
+near deploy $ID res/non_fungible_token.wasm
 ```
 
 <details>

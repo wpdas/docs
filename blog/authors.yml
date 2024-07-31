@@ -3,3 +3,27 @@ gagdiez:
   title: Docs Maintainer
   url: https://github.com/gagdiez
   image_url: https://github.com/gagdiez.png
+
+flmel: 
+  name: Lyudmil
+  title: DevRel
+  url: https://github.com/flmel
+  image_url: https://github.com/flmel.png
+
+thisisjoshford: 
+  name: Josh Ford
+  title: DevX PM
+  url: https://github.com/thisisjoshford
+  image_url: https://github.com/thisisjoshford.png
+
+bucanero: 
+  name: Damian
+  title: Docs Maintainer
+  url: https://github.com/bucanero
+  image_url: https://github.com/bucanero.png
+
+ewiner:
+  name: Eric Winer
+  title: CTO & Managing Director, Pagoda
+  url: https://github.com/ewiner
+  image_url: https://github.com/ewiner.png

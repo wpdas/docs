@@ -38,7 +38,7 @@ The RPC API enables you to query the network and get details about specific bloc
 ```
 
 </TabItem>
-<TabItem value="🌐 JavaScript" label="JavaScript">
+<TabItem value="js" label="🌐 JavaScript" label="JavaScript">
 
 ```js
 const response = await near.connection.provider.block({
@@ -77,7 +77,7 @@ http post https://rpc.testnet.near.org jsonrpc=2.0 id=dontcare method=block \
 ```
 
 </TabItem>
-<TabItem value="🌐 JavaScript" label="JavaScript">
+<TabItem value="js" label="🌐 JavaScript" label="JavaScript">
 
 ```js
 const response = await near.connection.provider.block({blockId: 17821130});
@@ -114,7 +114,7 @@ http post https://rpc.testnet.near.org jsonrpc=2.0 id=dontcare method=block \
 ```
 
 </TabItem>
-<TabItem value="🌐 JavaScript" label="JavaScript">
+<TabItem value="js" label="🌐 JavaScript" label="JavaScript">
 
 ```js
 const response = await near.connection.provider.block(
@@ -295,7 +295,7 @@ Here is the exhaustive list of the error variants that can be returned by `block
       <td>
         <ul>
           <li>Check that the requested block is legit</li>
-          <li>If the block had been produced more than 5 epochs ago, try to send your request to <a href="https://near-nodes.io/intro/node-types#archival-node">an archival node</a></li>
+          <li>If the block had been produced more than 5 epochs ago, try to send your request to <a href="https://near-nodes.io/intro/node-types#archival-node" target="_blank" rel="noopener noreferrer">an archival node</a></li>
         </ul>
       </td>
     </tr>
@@ -365,7 +365,7 @@ Here is the exhaustive list of the error variants that can be returned by `block
 ```
 
 </TabItem>
-<TabItem value="🌐 JavaScript" label="JavaScript">
+<TabItem value="js" label="🌐 JavaScript" label="JavaScript">
 
 ```js
 const response = await near.connection.provider.experimental_changes_in_block({
@@ -404,7 +404,7 @@ http post https://rpc.testnet.near.org jsonrpc=2.0 id=dontcare method=EXPERIMENT
 ```
 
 </TabItem>
-<TabItem value="🌐 JavaScript" label="JavaScript">
+<TabItem value="js" label="🌐 JavaScript" label="JavaScript">
 
 ```js
 const response = await near.connection.provider.experimental_changes_in_block(
@@ -443,7 +443,7 @@ http post https://rpc.testnet.near.org jsonrpc=2.0 id=dontcare method=EXPERIMENT
 ```
 
 </TabItem>
-<TabItem value="🌐 JavaScript" label="JavaScript">
+<TabItem value="js" label="🌐 JavaScript" label="JavaScript">
 
 ```js
 const response = await near.connection.provider.experimental_changes_in_block(
@@ -544,7 +544,7 @@ Here is the exhaustive list of the error variants that can be returned by `EXPER
       <td>
         <ul>
           <li>Check that the requested block is legit</li>
-          <li>If the block had been produced more than 5 epochs ago, try to send your request to <a href="https://near-nodes.io/intro/node-types#archival-node">an archival node</a></li>
+          <li>If the block had been produced more than 5 epochs ago, try to send your request to <a href="https://near-nodes.io/intro/node-types#archival-node" target="_blank" rel="noopener noreferrer">an archival node</a></li>
         </ul>
       </td>
     </tr>
@@ -610,7 +610,7 @@ Here is the exhaustive list of the error variants that can be returned by `EXPER
 ```
 
 </TabItem>
-<TabItem value="🌐 JavaScript" label="JavaScript">
+<TabItem value="js" label="🌐 JavaScript" label="JavaScript">
 
 ```js
 const response = await near.connection.provider.chunk({
@@ -644,7 +644,7 @@ http post https://rpc.testnet.near.org jsonrpc=2.0 method=chunk params:='{"chunk
 ```
 
 </TabItem>
-<TabItem value="🌐 JavaScript" label="JavaScript">
+<TabItem value="js" label="🌐 JavaScript" label="JavaScript">
 
 ```js
 const response = await near.connection.provider.chunk({
@@ -749,7 +749,7 @@ Here is the exhaustive list of the error variants that can be returned by `chunk
       <td>
         <ul>
           <li>Check that the requested block is legit</li>
-          <li>If the block had been produced more than 5 epochs ago, try to send your request to <a href="https://near-nodes.io/intro/node-types#archival-node">an archival node</a></li>
+          <li>If the block had been produced more than 5 epochs ago, try to send your request to <a href="https://near-nodes.io/intro/node-types#archival-node" target="_blank" rel="noopener noreferrer">an archival node</a></li>
         </ul>
       </td>
     </tr>

@@ -88,9 +88,9 @@ const config = {
   themeConfig: {
     image: 'docs/assets/welcome-pages/protocol.png',
     announcementBar: {
-      id: 'id-0002',
+      id: 'id-0005',
       content:
-        '🎉 Come check <a href="/blog">our new blog</a>, where we will share weekly news and updates 🎉',
+        'New blog post: <a href="/blog/2024-07-11-near-org-outage">An update on the near.org / RPC outage on July 11, 2024</a>',
       backgroundColor: '#fafbfc',
       textColor: '#333',
       isCloseable: true,
@@ -104,11 +104,18 @@ const config = {
         'go',
         'typescript',
         'jsx',
+        'bash',
       ],
     },
     colorMode: {
       defaultMode: 'light',
       respectPrefersColorScheme: true,
+    },
+    docs: {
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: true
+      }
     },
     navbar: {
       logo: {
@@ -118,46 +125,35 @@ const config = {
       },
       items: [
         {
-          to: '/concepts/welcome',
-          label: 'Concepts',
+          to: '/',
+          label: 'Docs',
           position: 'left',
-        },
-        {
-          to: '/build/welcome',
-          label: 'Build',
-          position: 'left',
+          activeBaseRegex: '(^/$)|(/build|concepts)',
         },
         {
           to: '/tutorials/welcome',
           label: 'Tutorials',
           position: 'left',
-        },
-        {
-          href: '/api/rpc/introduction',
-          label: 'RPC',
-        },
-        {
-          type: 'html',
-          value: '<span class="separator"></span>',
+          activeBaseRegex: '/tutorials/',
         },
         {
           type: 'dropdown',
           label: 'Tools',
           position: 'left',
           items: [
-            { label: '🧰 All Tools', href: '/tools/welcome' },
+            { label: '🧰 All Tools', to: '/tools/welcome'},
             {
               type: 'html',
               value: '<hr/> <small class="subtitle"> Essentials </small>',
             },
-            { label: 'NEAR API', href: '/tools/near-api-js/quick-reference' },
-            { label: 'NEAR SDK', href: '/sdk/welcome' },
-            { label: 'NEAR CLI', href: '/tools/near-cli' },
+            { label: 'NEAR API', to: '/tools/near-api-js/quick-reference' },
+            { label: 'NEAR SDK', to: '/tools/sdk' },
+            { label: 'NEAR CLI', to: '/tools/near-cli' },
             {
               type: 'html',
               value: '<hr/> <small class="subtitle"> Wallet Integration </small>',
             },
-            { label: 'Wallet Selector', href: '/tools/wallet-selector' },
+            { label: 'Wallet Selector', to: '/tools/wallet-selector' },
             {
               type: 'html',
               value: '<hr/> <small class="subtitle"> IDEs </small>',
@@ -169,6 +165,10 @@ const config = {
               href: 'https://docs.welldonestudio.io/code/getting-started',
             },
           ],
+        },
+        {
+          type: 'html',
+          value: '<span class="separator"></span>',
         },
         {
           type: 'dropdown',
@@ -209,7 +209,11 @@ const config = {
               value: '<hr /><div class="subtitle"> Other Docs </dib>',
             },
             {
-              href: 'https://nomicon.io',
+              href: 'https://github.com/near/NEPs',
+              label: 'NEPs',
+            },
+            {
+              href: 'https://near.github.io/nearcore/',
               label: 'Protocol Docs',
             },
             {
@@ -217,27 +221,23 @@ const config = {
               label: 'Validator Docs',
             },
             {
-              href: '/integrations/exchange-integration',
+              to: '/integrations/exchange-integration',
               label: 'Exchange Integrations',
             },
           ],
         },
         {
-          type: 'search',
-          position: 'right',
+          to: '/api/rpc/introduction',
+          label: 'RPC',
+          activeBaseRegex: '/api/rpc',
         },
-        { label: 'Blog', href: '/blog' },
+        { label: 'Blog', to: '/blog', activeBaseRegex: '/blog', position: 'right' },
         {
           type: 'localeDropdown',
           position: 'right',
         },
-        {
-          href: 'login',
-          position: 'right',
-        },
       ],
     },
-    image: 'img/near_logo.svg',
     footer: {
       links: [],
       copyright: 'Copyright © 2023 NEAR Protocol',
@@ -249,7 +249,7 @@ const config = {
       // The application ID provided by Algolia
       appId: '0LUM67N2P2',
       // Public API key: it is safe to commit it
-      apiKey: '129d0f429e1bb0510f0261dda1e88ed4',
+      apiKey: '50a400220b38e2d4bef996c7d0ed4b90',
       indexName: 'near',
       // Optional: see doc section below
       contextualSearch: true,

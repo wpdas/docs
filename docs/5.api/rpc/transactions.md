@@ -191,7 +191,9 @@ Here is the exhaustive list of the error variants that can be returned by `broad
       <td>An error happened during transaction execution</td>
       <td>
         <ul>
-          <li>See <code>error.cause.info</code> for details</li>
+          <li>See <code>error.cause.info</code> for details, likely a field in the transaction was invalid</li>
+          <li>If <code>error.cause.info</code> is <code>ShardCongested</code>, resubmit the identical transaction after a delay. (Consider adding a priority fee once [NEP-541](https://github.com/near/NEPs/pull/541) is released.)</li>
+          <li>If <code>error.cause.info</code> is <code>ShardStuck</code>, you may also resubmit the identical transaction after a delay</li>
         </ul>
       </td>
     </tr>
@@ -200,7 +202,7 @@ Here is the exhaustive list of the error variants that can be returned by `broad
       <td>Transaction was routed, but has not been recorded on chain in 10 seconds.</td>
       <td>
         <ul>
-          <li> Re-submit the request with the identical transaction (in NEAR Protocol unique transactions apply exactly once, so if the previously sent transaction gets applied, this request will just return the known result, otherwise, it will route the transaction to the chain once again)</li>
+          <li> Resubmit the request with the identical transaction (in NEAR Protocol unique transactions apply exactly once, so if the previously sent transaction gets applied, this request will just return the known result, otherwise, it will route the transaction to the chain once again)</li>
           <li>Check that your transaction is valid</li>
           <li>Check that the signer account id has enough tokens to cover the transaction fees (keep in mind that some tokens on each account are locked to cover the storage cost)</li>
         </ul>
@@ -435,7 +437,7 @@ Here is the exhaustive list of the error variants that can be returned by `tx` m
       <td>
         <ul>
           <li>Try again later</li>
-          <li>If the transaction had been submitted more than 5 epochs ago, try to send your request to <a href="https://near-nodes.io/intro/node-types#archival-node">an archival node</a></li>
+          <li>If the transaction had been submitted more than 5 epochs ago, try to send your request to <a href="https://near-nodes.io/intro/node-types#archival-node" target="_blank" rel="noopener noreferrer">an archival node</a></li>
           <li>Check the transaction hash</li>
         </ul>
       </td>
@@ -813,7 +815,7 @@ Here is the exhaustive list of the error variants that can be returned by `EXPER
       <td>
         <ul>
           <li>Try again later</li>
-          <li>If the transaction had been submitted more than 5 epochs ago, try to send your request to <a href="https://near-nodes.io/intro/node-types#archival-node">an archival node</a></li>
+          <li>If the transaction had been submitted more than 5 epochs ago, try to send your request to <a href="https://near-nodes.io/intro/node-types#archival-node" target="_blank" rel="noopener noreferrer">an archival node</a></li>
           <li>Check the transaction hash</li>
         </ul>
       </td>
@@ -1312,7 +1314,9 @@ Here is the exhaustive list of the error variants that can be returned by `broad
       <td>An error happened during transaction execution</td>
       <td>
         <ul>
-          <li>See <code>error.cause.info</code> for details</li>
+          <li>See <code>error.cause.info</code> for details, likely a field in the transaction was invalid</li>
+          <li>If <code>error.cause.info</code> is <code>ShardCongested</code>, resubmit the identical transaction after a delay. (Consider adding a priority fee once [NEP-541](https://github.com/near/NEPs/pull/541) is released.)</li>
+          <li>If <code>error.cause.info</code> is <code>ShardStuck</code>, you may also resubmit the identical transaction after a delay</li>
         </ul>
       </td>
     </tr>
@@ -1321,7 +1325,7 @@ Here is the exhaustive list of the error variants that can be returned by `broad
       <td>Transaction was routed, but has not been recorded on chain in 10 seconds.</td>
       <td>
         <ul>
-          <li> Re-submit the request with the identical transaction (in NEAR Protocol unique transactions apply exactly once, so if the previously sent transaction gets applied, this request will just return the known result, otherwise, it will route the transaction to the chain once again)</li>
+          <li> Resubmit the request with the identical transaction (in NEAR Protocol unique transactions apply exactly once, so if the previously sent transaction gets applied, this request will just return the known result, otherwise, it will route the transaction to the chain once again)</li>
           <li>Check that your transaction is valid</li>
           <li>Check that the signer account id has enough tokens to cover the transaction fees (keep in mind that some tokens on each account are locked to cover the storage cost)</li>
         </ul>

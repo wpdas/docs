@@ -39,14 +39,14 @@ The current active Validators are available on the Explorer. The minimum seat pr
   
 We don't need GPU support as we are a POS chain and we require very little compute power.
 
-You can read more about our consensus strategy on our <a href="https://github.com/near/wiki/blob/master/Archive/validators/about.md">Validator Quickstart</a> and <a href="https://github.com/near/wiki/blob/master/Archive/validators/faq.md">Staking FA</a>.
+You can read more about our consensus strategy on our <a href="https://github.com/near/wiki/blob/master/Archive/validators/about.md" target="_blank" rel="noopener noreferrer">Validator Quickstart</a> and <a href="https://github.com/near/wiki/blob/master/Archive/validators/faq.md" target="_blank" rel="noopener noreferrer">Staking FA</a>.
 </blockquote>
 
 ## Chunk-Only Validators
 
 The Chunk-Only Producer is a more accessible role with lower hardware and token requirements. This new role will allow the network's validator number to grow, creating more opportunities to earn rewards and secure the NEAR Ecosystem. 
 
-[Chunk-Only Producers](https://pages.near.org/papers/the-official-near-white-paper/#economics) are solely responsible for [producing chunks](https://pages.near.org/papers/nightshade/#nightshade) (parts of the block from a shard, see [Nightshade](https://pages.near.org/papers/nightshade/) for more detail) in one shard (a partition on the network). Because Chunk-Only Producers only need to validate one shard, they can run the validator node on a 8-Core CPU, with 16GB of RAM, and 500 GB SSD of storage.
+[Chunk-Only Producers](https://pages.near.org/papers/the-official-near-white-paper/#economics) are solely responsible for [producing chunks](https://pages.near.org/papers/nightshade/#nightshade) (parts of the block from a shard, see [Nightshade](https://near.org/papers/nightshade/) for more detail) in one shard (a partition on the network). Because Chunk-Only Producers only need to validate one shard, they can run the validator node on a 8-Core CPU, with 16GB of RAM, and 500 GB SSD of storage.
 
 Like Validators, Chunk-Only Producers will receive, at minimum, 4.5% annual rewards. If less than 100% of the tokens on the network is staked, Chunk-Only Producers stand to earn even more annual rewards. For more details about the Validator’s economics, please check out [NEAR’s Economics Explained](https://near.org/blog/near-protocol-economics/).
 

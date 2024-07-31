@@ -20,10 +20,10 @@ Every method execution has an environment associated with information such as:
 ## Environment Variables
 
 <Tabs className="language-tabs" groupId="code-tabs">
-  <TabItem value="🌐 JavaScript">
+  <TabItem value="js" label="🌐 JavaScript">
 
 | Variable Name          | SDK Variable                  | Description                                                                          |
-| ---------------------- | ----------------------------- | ------------------------------------------------------------------------------------ |
+|------------------------|-------------------------------|--------------------------------------------------------------------------------------|
 | Predecessor            | `near.predecessorAccountId()` | Account ID that called this method                                                   |
 | Current Account        | `near.currentAccountId()`     | Account ID of this smart contract                                                    |
 | Signer                 | `near.signerAccountId()`      | Account ID that signed the transaction leading to this execution                     |
@@ -40,7 +40,7 @@ Every method execution has an environment associated with information such as:
 
 </TabItem>
 
-<TabItem value="🦀 Rust">
+<TabItem value="rust" label="🦀 Rust">
 
 | Variable Name          | SDK Variable                    | Description                                                                          |
 |------------------------|---------------------------------|--------------------------------------------------------------------------------------|
@@ -163,7 +163,7 @@ During [cross-contract calls](./crosscontract.md) always make sure the callback 
 If you already [estimated the Gas](../../../1.concepts/protocol/gas.md#estimating-costs-for-a-call) a method needs, you can ensure it never runs out of Gas by using `assert`
 
 <Tabs className="language-tabs" groupId="code-tabs">
-<TabItem value="🦀 Rust">
+<TabItem value="rust" label="🦀 Rust">
 
 ```rust
 const REQUIRED_GAS: Gas = Gas(20_000_000_000_000); // 20 TGas
@@ -180,8 +180,10 @@ assert!(env::prepaid_gas() >= REQUIRED_GAS, "Please attach at least 20 TGas");
 
 ## Environment Functions
 
+Besides environmental variables, the SDK also exposes some functions to perform basic cryptographic operations
+
 <Tabs className="language-tabs" groupId="code-tabs">
-  <TabItem value="🌐 JavaScript">
+  <TabItem value="js" label="🌐 JavaScript">
 
 | Function Name         | SDK method                                       | Description                                                                                                                                                                                                                                                                                                                      |
 |-----------------------|--------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -196,7 +198,7 @@ assert!(env::prepaid_gas() >= REQUIRED_GAS, "Please attach at least 20 TGas");
 
 </TabItem>
 
-<TabItem value="🦀 Rust">
+<TabItem value="rust" label="🦀 Rust">
 
 | Function Name         | SDK method                                              | Description                                                                                                                                                                                                                                                                                                                      |
 |-----------------------|---------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

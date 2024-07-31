@@ -145,7 +145,7 @@ In the `index.ts` file let's import the necessary dependencies:
 import { startStream, types } from 'near-lake-framework';
 ```
 
-We've imported the main function `startStream` which will be called to actually run the indexer, and `types` that hold the `LakeConfig` type we need to contruct.
+We've imported the main function `startStream`, which will be called to actually run the indexer, and `types`, which hold the `LakeConfig` type we need to construct.
 
 ## Create a config
 
@@ -203,7 +203,7 @@ That's it. Now we can compile the code and run it
 
 :::danger Credentials
 
-To be able to access the data from [NEAR Lake](/tools/realtime#near-lake-indexer) you need to provide credentials. Please, see the [Credentials](../running-near-lake/credentials.md) article
+To be able to access the data from [NEAR Lake](/build/data-infrastructure/lake-framework/near-lake) you need to provide credentials. Please, see the [Credentials](../running-near-lake/credentials.md) article
 
 :::
 

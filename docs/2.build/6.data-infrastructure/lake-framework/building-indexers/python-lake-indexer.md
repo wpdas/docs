@@ -41,7 +41,7 @@ In the `main.py` file let's import the necessary dependencies:
 from near_lake_framework import near_primitives, LakeConfig, streamer
 ```
 
-We've imported the main function `streamer` which will be called to actually run the indexer, `near_primitives` and `LakeConfig` type we need to contruct.
+We've imported the main function `streamer`, which will be called to actually run the indexer, `near_primitives`, and `LakeConfig` type we need to construct.
 
 ## Create a config
 
@@ -122,7 +122,7 @@ You can stop the indexer by pressing CTRL+C
 
 :::danger Credentials
 
-To be able to access the data from [NEAR Lake](/tools/realtime#near-lake-indexer) you need to provide credentials. Please, see the [Credentials](../../lake-framework/running-near-lake/credentials.md) article
+To be able to access the data from [NEAR Lake](/build/data-infrastructure/lake-framework/near-lake) you need to provide credentials. Please, see the [Credentials](../../lake-framework/running-near-lake/credentials.md) article
 
 :::
 

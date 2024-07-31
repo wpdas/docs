@@ -12,13 +12,13 @@ https://github.com/near/near-lake-framework/
 
 ## Description
 
-NEAR Lake Framework is an ecosystem of library companions to [NEAR Lake](/tools/realtime#near-lake-indexer). They allow you to build your own indexer that subscribes to the stream of blocks from the [NEAR Lake](/tools/realtime#near-lake-indexer) data source and create your own logic to process the NEAR Protocol data in the programming languages of your choice (at the moment, there are implementations in [Python](http://pypi.org/project/near-lake-framework), [JavaScript](https://www.npmjs.com/package/near-lake-framework), and [Rust](https://crates.io/crates/near-lake-framework)).
+NEAR Lake Framework is an ecosystem of library companions to [NEAR Lake](/build/data-infrastructure/lake-framework/near-lake). They allow you to build your own indexer that subscribes to the stream of blocks from the [NEAR Lake](/build/data-infrastructure/lake-framework/near-lake) data source and create your own logic to process the NEAR Protocol data in the programming languages of your choice (at the moment, there are implementations in [Python](http://pypi.org/project/near-lake-framework), [JavaScript](https://www.npmjs.com/package/near-lake-framework), and [Rust](https://crates.io/crates/near-lake-framework)).
 
 :::tip NEAR Lake Framework announcement
 
 We have announced the release of NEAR Lake Framework on NEAR Governance Forum.
 
-Please, read the post [there](https://gov.near.org/t/announcement-near-lake-framework-brand-new-word-in-indexer-building-approach/17668).
+Please, read the post [here](https://gov.near.org/t/announcement-near-lake-framework-brand-new-word-in-indexer-building-approach/17668).
 
 :::
 

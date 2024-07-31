@@ -7,7 +7,7 @@ sidebar_label: Introduction
 <blockquote className="info">
 <strong>did you know?</strong><br /><br />
 
-The [NEAR Platform overview](/concepts/welcome) clarifies much of the language in this section.
+The [NEAR Platform overview](/concepts/basics/protocol) clarifies much of the language in this section.
 
 </blockquote>
 
@@ -147,5 +147,5 @@ VMerror                                                   An error that occurs i
 ```
 
 :::tip Got a question?
-<a href="https://stackoverflow.com/questions/tagged/nearprotocol"> Ask it on StackOverflow! </a>
+<a href="https://stackoverflow.com/questions/tagged/nearprotocol" target="_blank" rel="noopener noreferrer"> Ask it on StackOverflow! </a>
 :::

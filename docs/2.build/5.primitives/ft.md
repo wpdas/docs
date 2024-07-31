@@ -77,7 +77,7 @@ near call <account-id> new '{"owner_id": "<owner-account>", "total_supply": "100
 ```
 
 :::tip
-Check the [Contract Wizard](https://near.org/contractwizard.near/widget/ContractWizardUI) to create a personalized FT contract!.
+Check the [Contract Wizard](https://dev.near.org/contractwizard.near/widget/ContractWizardUI) to create a personalized FT contract!.
 :::
 
 ---
@@ -206,10 +206,10 @@ The `ft_on_transfer` must return how many FT tokens have to **be refunded**, so 
 
 ```rust
 // Implement the contract structure
-#[near_bindgen]
+#[near(contract_state)]
 impl Contract {}
 
-#[near_bindgen]
+#[near]
 impl FungibleTokenReceiver for Contract {
   // Callback on receiving tokens by this contract.
   // `msg` format is either "" for deposit or `TokenReceiverMessage`.
